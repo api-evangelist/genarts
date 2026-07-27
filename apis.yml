@@ -1,7 +1,25 @@
 aid: genarts
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/genarts.png
 name: GenArts
-description: GenArts is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: GenArts, Inc. was a Cambridge, Massachusetts developer of visual effects
+  software for the film, broadcast, and advertising industries, best known for its
+  flagship Sapphire plug-in suite used in Oscar-nominated visual effects work since
+  1996. GenArts was acquired by Boris FX in September 2016; the genarts.com domain
+  now redirects to borisfx.com and the Sapphire product line is developed and sold
+  under the Boris FX brand. The company published no public developer API, SDK, or
+  documented programmatic surface — its products are desktop editing plug-ins. This
+  profile is retained in the API Evangelist network as an acquired-company lead.
 url: https://raw.githubusercontent.com/api-evangelist/genarts/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,21 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: boris-fx
+x-acquired-date: '2016-09'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Visual Effects
+- VFX
+- Video Editing
+- Plugins
+- Media and Entertainment
+- Software
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/genarts-domain-security.yml
 - type: Website
   url: http://www.genarts.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
